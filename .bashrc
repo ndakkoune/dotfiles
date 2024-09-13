@@ -117,17 +117,14 @@ if ! shopt -oq posix; then
   fi
 fi
 
+
+export PATH="$PATH:/opt/nvim-linux64/bin"
+export PATH="$HOME/.tmux/plugins/tmuxifier/bin:$PATH"
+export EDITOR="/opt/nvim-linux64/bin/nvim"
+
+eval "$(tmuxifier init -)"
+
+# Aliases
 alias n='nvim'
-
-# For the python lsp to work
-export PATH="$PATH:/opt/nvim-linux64/bin:$HOME/.local/bin:/usr/local/go/bin"
-. "$HOME/.cargo/env"
-
-# Automatic tmux starting/attaching
-if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
-    exec tmux new-session -A -s main  
-fi
-
-# Temporary aliases
 alias cd100='cd ~/Documents/100-days-of-coding/'
 alias env100='. ~/Documents/100-days-of-coding/env/bin/activate'
