@@ -16,6 +16,7 @@ return {
           "lua_ls",
           "bashls",
           "ruff",
+          "pylsp",
           "marksman"
         },
       }
@@ -31,12 +32,28 @@ return {
       lspconfig.lua_ls.setup({ capabilities = capabilities })
       lspconfig.bashls.setup({ capabilities = capabilities })
       lspconfig.ruff.setup({ capabilities = capabilities })
-      lspconfig.pyright.setup({ capabilities = capabilities })
+      lspconfig.pylsp.setup({
+        capabilities = capabilities,
+        settings = {
+            pylsp = {
+              plugins = {
+                ruff = {
+                  enabled = true,
+                  formatEnabled= true,
+                },
+              }
+            }
+          }
+      })
+      -- lspconfig.pyright.setup({ capabilities = capabilities })
       lspconfig.marksman.setup({ capabilities = capabilities })
       -- Keymaps
       vim.keymap.set("n","K",vim.lsp.buf.hover, {})
       vim.keymap.set("n","gd",vim.lsp.buf.definition, {})
       vim.keymap.set({"n","v"},"<leader>ca",vim.lsp.buf.code_action, {})
     end
+  },
+  {
+    "python-lsp/python-lsp-ruff",
   }
 }
