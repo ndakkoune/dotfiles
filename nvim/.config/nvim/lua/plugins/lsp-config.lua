@@ -17,7 +17,8 @@ return {
           "bashls",
           "ruff",
           "pylsp",
-          "marksman"
+          "marksman",
+          "clangd"
         },
       }
     end
@@ -47,6 +48,7 @@ return {
       })
       -- lspconfig.pyright.setup({ capabilities = capabilities })
       lspconfig.marksman.setup({ capabilities = capabilities })
+      lspconfig.clangd.setup({ capabilities = capabilities })
       -- Keymaps
       vim.keymap.set("n","K",vim.lsp.buf.hover, {})
       vim.keymap.set("n","gd",vim.lsp.buf.definition, {})
