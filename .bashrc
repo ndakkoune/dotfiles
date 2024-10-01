@@ -121,10 +121,13 @@ fi
 export PATH="$PATH:/opt/nvim-linux64/bin"
 export PATH="$HOME/.tmux/plugins/tmuxifier/bin:$PATH"
 export EDITOR="/opt/nvim-linux64/bin/nvim"
+export GCM_CREDENTIAL_STORE=gpg
 
 eval "$(tmuxifier init -)"
 
 # Aliases
+alias c='clear'
 alias n='nvim'
+alias cddot="cd ~/dotfiles/"
 alias cd100='cd ~/Documents/100-days-of-coding/'
 alias env100='. ~/Documents/100-days-of-coding/env/bin/activate'
