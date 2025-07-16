@@ -81,3 +81,9 @@ inoremap <Down>  <ESC>:echoe "Use j"<CR>
 " CtrlP
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_icmd = 'CtrlP'
+
+" " Overriding
+" let $LOCALFILE=expand("~/.vimrc_local")
+" if filereadable($LOCALFILE)
+"     source $LOCALFILE
+" endif

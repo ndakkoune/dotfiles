@@ -8,6 +8,7 @@ return {
       "saadparwaiz1/cmp_luasnip",
       "rafamadriz/friendly-snippets",
     },
+    version = "v2.*", -- Replace <CurrentMajor> by the latest released major (first number of latest release)
     run = "make install_jsregexp"
   },
   {

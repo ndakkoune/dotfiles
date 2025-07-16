@@ -1,0 +1,38 @@
+
+[alias]
+	last = log -1 HEAD
+	graph = log --all --graph --decorate --oneline
+	update-submodules = submodule update --init --recursive
+    root = rev-parse --show-toplevel
+	pullrb = pull --rebase
+    co = checkout
+	di = diff
+	dis = diff --stat
+	dc = diff --cached
+	dcs = diff --cached --stat
+	dh = diff HEAD~
+	dhs = diff HEAD~ --stat
+	du = diff @{u}...
+	dus = diff @{u}... --stat
+	cleanall = clean -fdx # this is dangerous, so it's intentionally long to type
+[core]
+	editor = nvim
+	excludesFile = ~/.gitignore_global
+
+[url "https://github.com/"]
+    insteadof=git://github.com
+
+; [gpg]
+; 	format = ssh
+
+; [commit]
+; 	gpgsign = true
+
+[rebase]
+	autosquash = true
+
+[pull]
+	ff = only
+
+[include]
+    path = ~/.gitconfig_local
