@@ -18,6 +18,8 @@ alias c='clear'
 alias lg='lazygit'
 alias gst='git status'
 
+alias n='nvim'
+
 # Update dotfiles
 dfu() {
     (

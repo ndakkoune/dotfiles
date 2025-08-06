@@ -1,4 +1,3 @@
-
 [alias]
 	last = log -1 HEAD
 	graph = log --all --graph --decorate --oneline
@@ -15,18 +14,13 @@
 	du = diff @{u}...
 	dus = diff @{u}... --stat
 	cleanall = clean -fdx # this is dangerous, so it's intentionally long to type
+
 [core]
 	editor = nvim
 	excludesFile = ~/.gitignore_global
 
 [url "https://github.com/"]
     insteadof=git://github.com
-
-; [gpg]
-; 	format = ssh
-
-; [commit]
-; 	gpgsign = true
 
 [rebase]
 	autosquash = true
