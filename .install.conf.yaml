@@ -12,15 +12,15 @@
       create: true
       path: nvim/**
       glob: true
+    ~/.config/lazygit/config.yml:
+      create: true
+      path: lazygit
+      force: true
     ~/.bash:
     ~/.bash_profile:
     ~/.bashrc:
     ~/.dotfiles: ''
     ~/.gitconfig: 
-    ~/.local/share/fonts:
-      create: true
-      path: fonts/*
-      glob: true
     ~/.shell:
     ~/.tmux.conf:
     ~/.tmuxifier: tmux/plugins/tmuxifier
