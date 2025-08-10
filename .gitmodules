@@ -3,12 +3,6 @@
 	url = https://github.com/anishathalye/dotbot
 	ignore = dirty
 
-[submodule "fonts/JetBrainsMono"]
-	path = fonts/JetBrainsMono
-	url = https://github.com/JetBrains/JetBrainsMono
-[submodule "tmuxifier"]
-	path = tmuxifier
-	url = https://github.com/jimeh/tmuxifier.git
 [submodule "tmux/plugins/tmuxifier"]
 	path = tmux/plugins/tmuxifier
 	url = https://github.com/jimeh/tmuxifier.git
