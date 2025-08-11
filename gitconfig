@@ -30,3 +30,6 @@
 
 [include]
     path = ~/.gitconfig_local
+
+[fetch]
+	prune = true
