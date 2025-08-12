@@ -16,6 +16,9 @@
       create: true
       path: lazygit
       force: true
+    ~/.config/mise/config.toml:
+      create: true
+      path: mise
     ~/.bash:
     ~/.bash_profile:
     ~/.bashrc:
