@@ -28,6 +28,9 @@
 [pull]
 	ff = only
 
+[commit]
+    template = ~/.gitmessage
+
 [include]
     path = ~/.gitconfig_local
 

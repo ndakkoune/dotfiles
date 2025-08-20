@@ -22,6 +22,7 @@
     ~/.bashrc:
     ~/.dotfiles: ''
     ~/.gitconfig: 
+    ~/.gitmessage:
     ~/.oh-my-zsh/custom:
       path: oh-my-zsh/custom
     ~/.shell:
