@@ -9,21 +9,21 @@
 
 - link:
     ~/.config/nvim: 
-      create: true
       path: nvim/**
       glob: true
+      force: true
     ~/.config/lazygit/config.yml:
-      create: true
       path: lazygit
       force: true
     ~/.config/mise/config.toml:
-      create: true
       path: mise
     ~/.bash:
     ~/.bash_profile:
     ~/.bashrc:
     ~/.dotfiles: ''
     ~/.gitconfig: 
+    ~/.oh-my-zsh/custom:
+      path: oh-my-zsh/custom
     ~/.shell:
     ~/.tmux:
     ~/.tmux.conf:

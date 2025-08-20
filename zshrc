@@ -1,48 +1,21 @@
 # Functions
 source ~/.shell/functions.sh
 
-# Allow local customizations in the ~/.shell_local_before file
-if [ -f ~/.shell_local_before ]; then
-    source ~/.shell_local_before
-fi
-
-# Allow local customizations in the ~/.zshrc_local_before file
-if [ -f ~/.zshrc_local_before ]; then
-    source ~/.zshrc_local_before
-fi
-
-# External plugins (initialized before)
-source ~/.zsh/plugins_before.zsh
+# Before
+fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
 
 # Settings
-source ~/.zsh/settings.zsh
+ZSH_THEME="random"
 
-# Bootstrap
-source ~/.shell/bootstrap.sh
+export ZSH=$HOME/.oh-my-zsh
 
-# External settings
-source ~/.shell/external.sh
+export EDITOR=nvim
 
 # Aliases
 source ~/.shell/aliases.sh
 
-# Custom prompt
-source ~/.zsh/prompt.zsh
+# After
+source $ZSH/oh-my-zsh.sh
 
-# External plugins (initialized after)
-source ~/.zsh/plugins_after.zsh
-
-# Allow local customizations in the ~/.shell_local_after file
-if [ -f ~/.shell_local_after ]; then
-    source ~/.shell_local_after
-fi
-
-# Allow local customizations in the ~/.zshrc_local_after file
-if [ -f ~/.zshrc_local_after ]; then
-    source ~/.zshrc_local_after
-fi
-
-# Allow private customizations (not checked in to version control)
-if [ -f ~/.shell_private ]; then
-    source ~/.shell_private
-fi
+# Initialize completion
+autoload -U compinit && compinit
