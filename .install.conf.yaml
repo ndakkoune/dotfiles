@@ -25,8 +25,8 @@
     ~/.dotfiles: ''
     ~/.gitconfig: 
     ~/.shell:
+    ~/.tmux:
     ~/.tmux.conf:
-    ~/.tmuxifier: tmux/plugins/tmuxifier
     ~/.vimrc:
     ~/.zshrc:
 
