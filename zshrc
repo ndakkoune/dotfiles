@@ -15,6 +15,7 @@ export EDITOR=nvim
 source ~/.shell/aliases.sh
 
 # After
+source $ZSH/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $ZSH/oh-my-zsh.sh
 
 # Initialize completion
