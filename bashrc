@@ -5,7 +5,7 @@ source ~/.shell/functions.sh
 source ~/.bash/settings.bash
 
 # Bootstrap
-source ~/.shell/boostrap.sh
+source ~/.shell/bootstrap.sh
 
 # Aliases
 source ~/.shell/aliases.sh
