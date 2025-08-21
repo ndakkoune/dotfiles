@@ -8,6 +8,8 @@
 - clean: ['~']
 
 - link:
+    ~/.config/alacritty/alacritty.toml:
+      path: alacritty
     ~/.config/nvim: 
       path: nvim/**
       glob: true

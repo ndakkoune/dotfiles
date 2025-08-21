@@ -4,6 +4,9 @@ source ~/.shell/functions.sh
 # Settings
 source ~/.bash/settings.bash
 
+# Bootstrap
+source ~/.shell/boostrap.sh
+
 # Aliases
 source ~/.shell/aliases.sh
 

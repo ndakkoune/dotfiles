@@ -11,6 +11,11 @@ export ZSH=$HOME/.oh-my-zsh
 
 export EDITOR=nvim
 
+setopt HIST_IGNORE_DUPS
+
+# Bootstrap
+source ~/.shell/bootstrap.sh
+
 # Aliases
 source ~/.shell/aliases.sh
 
