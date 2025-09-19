@@ -19,6 +19,10 @@ source ~/.shell/bootstrap.sh
 # Aliases
 source ~/.shell/aliases.sh
 
+if [ -f ~/.shell_local ]; then
+    source ~/.shell_local
+fi
+
 # After
 source $ZSH/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $ZSH/oh-my-zsh.sh
