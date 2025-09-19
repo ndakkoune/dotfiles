@@ -30,6 +30,7 @@
     ~/.gitmessage:
     ~/.oh-my-zsh/custom:
       path: oh-my-zsh/custom
+      force: true
     ~/.shell:
     ~/.tmux:
     ~/.tmux.conf:
