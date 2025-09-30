@@ -25,6 +25,7 @@
     ~/.bash:
     ~/.bash_profile:
     ~/.bashrc:
+      force: true
     ~/.dotfiles: ''
     ~/.gitconfig: 
     ~/.gitmessage:
@@ -36,6 +37,7 @@
     ~/.tmux.conf:
     ~/.vimrc:
     ~/.zshrc:
+      force: true
 
 - shell:
   - git submodule sync --recursive
