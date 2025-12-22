@@ -29,3 +29,6 @@ source $ZSH/oh-my-zsh.sh
 
 # Initialize completion
 autoload -U compinit && compinit
+
+# Mise
+eval "$(~/.local/bin/mise activate zsh)"
