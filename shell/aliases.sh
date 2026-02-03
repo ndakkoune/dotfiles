@@ -13,6 +13,7 @@ alias l='ls'
 
 # clear
 alias c='clear'
+alias cat='batcat'
 
 # git
 alias lg='lazygit'
@@ -20,9 +21,4 @@ alias gst='git status'
 
 alias n='nvim'
 
-# Update dotfiles
-dfu() {
-    (
-        cd ~/.dotfiles && git pull --ff-only && ./install -q
-    )
-}
+alias k='kubectl'

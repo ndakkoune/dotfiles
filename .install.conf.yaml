@@ -20,8 +20,6 @@
     ~/.config/lazygit/config.yml:
       path: lazygit
       force: true
-    ~/.config/mise/config.toml:
-      path: mise
     ~/.bash:
     ~/.bash_profile:
     ~/.bashrc:
@@ -36,6 +34,7 @@
     ~/.tmux:
     ~/.tmux.conf:
     ~/.vimrc:
+    ~/.zsh:
     ~/.zshrc:
       force: true
 

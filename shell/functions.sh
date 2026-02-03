@@ -1,3 +1,10 @@
+# Update dotfiles
+dfu() {
+    (
+        cd ~/.dotfiles && git pull --ff-only && ./install -q
+    )
+}
+
 path_remove() {
     PATH=$(echo -n "$PATH" | awk -v RS=: -v ORS=: "\$0 != \"$1\"" | sed 's/:$//')
 }

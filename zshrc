@@ -1,32 +1,17 @@
-# Functions
 source ~/.shell/functions.sh
-
-# Before
-fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
-
-# Settings
-ZSH_THEME="random"
-
-export ZSH=$HOME/.oh-my-zsh
-
-export EDITOR=nvim
-
-setopt HIST_IGNORE_DUPS
-
-# Bootstrap
 source ~/.shell/bootstrap.sh
-
-# Aliases
 source ~/.shell/aliases.sh
 
 if [ -f ~/.shell_local ]; then
     source ~/.shell_local
 fi
 
-# After
-source $ZSH/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source $ZSH/oh-my-zsh.sh
+source ~/.zsh/interactive.zsh
 
-# Initialize completion
-autoload -U compinit && compinit
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init - zsh)"
